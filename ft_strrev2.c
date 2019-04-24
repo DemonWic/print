@@ -6,7 +6,7 @@
 /*   By: ahintz <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 13:46:23 by ahintz            #+#    #+#             */
-/*   Updated: 2019/04/17 18:02:31 by ahintz           ###   ########.fr       */
+/*   Updated: 2019/04/24 17:56:50 by ahintz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,8 +93,26 @@ char	*ft_integer(unsigned long nb, int sign)
 	free(res);
 	return (tmp);
 }
-
-
+/*
+char	*ft_fraction(char *res, int count, int accur, double h)
+{
+	while (j < accur)
+		{
+			if (count == 0)
+			{
+				res[i++] = '.';
+				j++;
+			}
+			h *= 10.0;
+			buf = (int)h;
+			res[i] = buf + 48;
+			h -= buf;
+			count--;
+			i++;
+			j++;
+		}
+}
+*/
 char	*ft_ftoa(double nb, int accur)
 {
 	unsigned long max = -1;
@@ -117,28 +135,30 @@ char	*ft_ftoa(double nb, int accur)
 	if (sign == 1)
 		len++;
 	char *res = (char *)malloc(sizeof(char) * (len + accur + count + 2));
-	int i = 0;
-	while (src[i])
-	{
+	int i = -1;
+	while (src[++i])
 		res[i] = src[i];
-		i++;
-	}
 	double h = nb - f;
-	int j = -1;
+	int j = 0;
+	double a = ft_powd(0.1, accur);
 	accur += count + 1;
 	int buf;
-	while (j++ < accur)
+	while (j < accur)
 	{
 		if (count == 0)
+		{
 			res[i++] = '.';
-		h *= 10.0;
-		buf = (int)h;
-		//printf("%i   ",buf);
+			j++;
+		}
+		h *= 10;
+		buf = (int)(h + a);
 		res[i] = buf + 48;
 		h -= buf;
 		count--;
 		i++;
+		j++;
 	}
+
 	res[i] = '\0';
 	return (res);
 
@@ -181,8 +201,34 @@ int		main()
 	unsigned char n = -1;
 	printf("6 %i \n", n);*/
 	double k = 1234567.1234567;
-	char *res = ft_ftoa(k, 7);
+	double b = (k * 1000) / 1000;
+	char *res = ft_ftoa(b, 6);
 	printf("%s\n", res);
+	printf("{%f}\n{%F}\n", 1.42, 1.42);
+	double kk = 1.42;
+	char *pp = ft_ftoa(kk, 6);
+	printf("123 %s\n", pp);
+	printf("{%f}\n{%F}\n", -1.42, -1.42);
+	double kkk = -1.42;
+	char *ppp = ft_ftoa(kkk, 6);
+	printf("123 %s\n", ppp);
+	int p = (int)2.0000;
+	printf("444 %i\n", p);
+	printf("--------------------------------------------------------------\n");
+	printf("%f\n",(1.0 / 0.0));
+	printf("%f\n",(-1.0 / 0.0));
+	printf("--------------------------------------------------------------\n");
+	printf("%.0f\n", 12.6);
+	printf("%.0f\n", 13.4);
+/*	double g = 1444565444646.6465424242242;
+	char *pec = ft_ftoa(g, 6);
+	printf("{%f}\n{%F}\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
+	printf("123  %s\n", pec);
+	double hh = -1444565444646.6465424242242454654;
+	char *cep = ft_ftoa(hh, 6);
+	printf("{%f}\n{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
+	printf("456 %s\n", cep);
+*/
 
 	return (0);
 }

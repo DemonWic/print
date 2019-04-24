@@ -6,7 +6,7 @@
 /*   By: ahintz <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 14:03:46 by ahintz            #+#    #+#             */
-/*   Updated: 2019/03/24 16:30:50 by ahintz           ###   ########.fr       */
+/*   Updated: 2019/04/24 17:47:04 by ahintz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,5 @@ int					ft_sqrt(int nb);
 char				*ft_base16_encoder(char *s);
 char				*ft_base16_decoder(char *s);
 long long int		ft_pow(int nb, int p);
+long double			ft_powd(long double nb, long int p);
 #endif
