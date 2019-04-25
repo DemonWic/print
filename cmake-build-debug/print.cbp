@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="print"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ahintz/PRINTF/print/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/ahintz/PRINTF/print/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/ahintz/PRINTF/print/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print">
+				<Option output="/Users/ahintz/PRINTF/print/cmake-build-debug/print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ahintz/PRINTF/print/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ahintz/PRINTF/print/."/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft"/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft/includes"/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 print"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="print/fast">
+				<Option output="/Users/ahintz/PRINTF/print/cmake-build-debug/print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ahintz/PRINTF/print/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ahintz/PRINTF/print/."/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft"/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft/includes"/>
+					<Add directory="/Users/ahintz/PRINTF/print/libft/src"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 print/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ahintz/PRINTF/print/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ahintz/PRINTF/print/bonus_10_conv_fF.spec.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_check.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_floor.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_printf.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_strrev.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_strrev2.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/ft_zerof.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft.h">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/includes/libft.h">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_atoi.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_base16_decoder.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_base16_encoder.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_bzero.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_check.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_isalnum.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_isalpha.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_isascii.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_isdigit.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_isprint.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_itoa.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstadd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstdel.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstdelone.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstiter.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstmap.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_lstnew.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memalloc.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memccpy.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memchr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memcmp.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memcpy.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memdel.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memmove.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_memset.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_pow.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_powd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putchar.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putchar_fd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putendl.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putendl_fd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putnbr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putnbr_fd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putstr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_putstr_fd.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_rot_n.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_sqrt.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strcat.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strchr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strclr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strcmp.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strcpy.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strdel.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strdup.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strequ.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_striter.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_striteri.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strjoin.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strlcat.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strlen.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strmap.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strmapi.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strncat.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strncmp.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strncpy.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strnequ.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strnew.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strnstr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strrchr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strrev.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strsplit.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strstr.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strsub.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_strtrim.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_tolower.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/libft/src/ft_toupper.c">
+			<Option target="print"/>
+		</Unit>
+		<Unit filename="/Users/ahintz/PRINTF/print/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

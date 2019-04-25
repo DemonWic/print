@@ -6,7 +6,7 @@
 /*   By: ahintz <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/03 14:03:46 by ahintz            #+#    #+#             */
-/*   Updated: 2019/04/24 17:47:04 by ahintz           ###   ########.fr       */
+/*   Updated: 2019/04/25 16:54:32 by ahintz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,4 +94,9 @@ char				*ft_base16_encoder(char *s);
 char				*ft_base16_decoder(char *s);
 long long int		ft_pow(int nb, int p);
 long double			ft_powd(long double nb, long int p);
+char				*ft_check(double nb);
+int					ft_numlen(unsigned long int nb);
+char				*ft_strrev(char *s);
+char				*ft_zerof(double nb);
+double				ft_round(double x, int prec);
 #endif

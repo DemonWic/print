@@ -6,14 +6,14 @@
 /*   By: ahintz <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 13:46:23 by ahintz            #+#    #+#             */
-/*   Updated: 2019/04/24 17:56:50 by ahintz           ###   ########.fr       */
+/*   Updated: 2019/04/25 17:19:00 by ahintz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
-
+/*
 char		*ft_strrev(char *s)
 {
 	int		i;
@@ -43,8 +43,8 @@ int		ft_numlen(unsigned long int nb)
 		i++;
 	}
 	return (i);
-}
-
+}*/
+/*
 char	*ft_ltoa(unsigned long int nb)
 {
 	int i;
@@ -69,7 +69,7 @@ char	*ft_ltoa(unsigned long int nb)
 	free(res);
 	return (tmp);
 }
-
+*/
 char	*ft_integer(unsigned long nb, int sign)
 {
 	int i;
@@ -164,7 +164,22 @@ char	*ft_ftoa(double nb, int accur)
 
 }
 
+char	*ft_double(double nb, int accur)
+{
+	char *res;
+	double tmp;
 
+	if ((res = ft_check(nb)))
+		return (res);
+	else if (accur == 0)
+		return (ft_zerof(nb));
+	else
+	{
+		tmp = ft_round(nb, accur);
+		res = ft_ftoa(tmp, accur);
+		return (res);
+	}
+}
 int		main()
 {
 /*	char p = 'D';
@@ -202,33 +217,32 @@ int		main()
 	printf("6 %i \n", n);*/
 	double k = 1234567.1234567;
 	double b = (k * 1000) / 1000;
-	char *res = ft_ftoa(b, 6);
+	char *res = ft_double(b, 6);
 	printf("%s\n", res);
 	printf("{%f}\n{%F}\n", 1.42, 1.42);
 	double kk = 1.42;
-	char *pp = ft_ftoa(kk, 6);
+	char *pp = ft_double(kk, 6);
 	printf("123 %s\n", pp);
 	printf("{%f}\n{%F}\n", -1.42, -1.42);
 	double kkk = -1.42;
-	char *ppp = ft_ftoa(kkk, 6);
+	char *ppp = ft_double(kkk, 6);
 	printf("123 %s\n", ppp);
-	int p = (int)2.0000;
-	printf("444 %i\n", p);
 	printf("--------------------------------------------------------------\n");
 	printf("%f\n",(1.0 / 0.0));
 	printf("%f\n",(-1.0 / 0.0));
 	printf("--------------------------------------------------------------\n");
 	printf("%.0f\n", 12.6);
+	printf("%s\n", ft_double(12.6, 0));
 	printf("%.0f\n", 13.4);
-/*	double g = 1444565444646.6465424242242;
-	char *pec = ft_ftoa(g, 6);
+	printf("%s\n", ft_double(13.4, 0));
+	double g = 1444565444646.6465424242242;
+	char *pec = ft_double(g, 6);
 	printf("{%f}\n{%F}\n", 1444565444646.6465424242242, 1444565444646.6465424242242);
 	printf("123  %s\n", pec);
 	double hh = -1444565444646.6465424242242454654;
-	char *cep = ft_ftoa(hh, 6);
+	char *cep = ft_double(hh, 6);
 	printf("{%f}\n{%F}\n", -1444565444646.6465424242242454654, -1444565444646.6465424242242454654);
 	printf("456 %s\n", cep);
-*/
 
 	return (0);
 }

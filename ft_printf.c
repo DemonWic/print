@@ -15,10 +15,10 @@
 #include "libft.h"
 
 void	ft_var(char t, va_list ag)
-{	
+{
 	int i;
 	char *s;
-	
+
 	if (t == 'c')
 	{
 		i = va_arg(ag, int);
@@ -70,7 +70,7 @@ int		main()
 	char s = 'A';
 	char *p;
 	p = &s;
-	unsigned long ptr = (unsigned long)p; 
+	unsigned long ptr = (unsigned long)p;
 	printf("%p\n", p);
 	printf("0x%lx\n", ptr);
 	printf("0x%li\n", ptr);

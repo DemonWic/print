@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ahintz/PRINTF/print/ft_strrev2.c
+stdio.h
+-
+stdlib.h
+-
+libft.h
+/Users/ahintz/PRINTF/print/libft.h
+
+/Users/ahintz/PRINTF/print/libft.h
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+ctype.h
+-
+fcntl.h
+-
+

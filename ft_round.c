@@ -6,20 +6,20 @@
 /*   By: ahintz <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/24 13:14:23 by ahintz            #+#    #+#             */
-/*   Updated: 2019/04/24 17:22:42 by ahintz           ###   ########.fr       */
+/*   Updated: 2019/04/25 16:25:54 by ahintz           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-double	ft_ceil(double x)
+static double	ft_ceil(double x)
 {
 	if (x < 0)
 		return ((long int)x);
 	return ((long int)x) + 1;
 }
 
-double	ft_floor(double x)
+static double	ft_floor(double x)
 {
 	if (x > 0)
 		return ((long int)x);
@@ -43,15 +43,15 @@ double	ft_round(double x, int prec)
 	else
 		return (ft_ceil(x * mul - 0.5) / mul);
 }
-
+/*
 int		main()
 {
-	double k = 1234567.1234567 ;
+	double k = 19.9 ;
 	double p;
-	p = ft_round(k, 4);
+	p = ft_round(k, 1);
 	printf("%f\n", k);
 	printf("%f\n", p);
 	printf("%.0f\n", 19.9);
 	printf("%.0f\n", 10.5);
 	return (0);
-}
+}*/
